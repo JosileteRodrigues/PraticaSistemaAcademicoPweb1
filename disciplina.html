@@ -1,0 +1,59 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinas</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Acadêmico - IFPB</h1>
+
+    <h2> Cadastrar Disciplinas </h2>
+    <label for="label-codigo">Digite o código:</label>
+    <input type="number" id="codigo-disciplina" placeholder="Código"> <br> <br>
+    <label for="label-disciplina">Digite a disciplina:</label>
+    <input type="text" id="nome-disciplina" placeholder="Nome da Disciplina"> <br> <br>
+
+    <button id="button-inserir" onclick="disciplinaControlador.inserir()"> Cadastrar </button>
+
+    <h2> Cadastrar Alunos em Disciplinas </h2>
+        <label>Digite o código da disciplina:</label>
+        <input type="number" id="codigo-disciplina-alunos" placeholder="Código"> <br> <br>
+        <label>Digite a matricula do aluno:</label>
+        <input type="number" id="matricula-aluno" placeholder="Matrícula"> <br> <br>
+
+    <button id="button-inserir" onclick="inserirAlunoNaDisciplina()"> Cadastrar </button>
+
+    <div>
+        <br>
+        <h2> Lista de Disciplinas </h2>
+        <ul id="lista-disciplina">
+        </ul>
+    </div>
+
+        <br>
+        <h2> Lista de Alunos </h2>
+        <ul id="lista-alunos">
+        </ul>
+    </div>
+
+    <a href="../index.html"> Ir Cadastrar Alunos </a>
+
+    <script src="../js/model/aluno.js"></script>
+    <script src="../js/servico/aluno-servico.js"></script>
+    <script src="../js/repositorio/aluno-repositorio.js"></script>
+    <script src="../js/controller/aluno-controlador.js"></script>
+
+    <script src="../js/model/disciplina.js"></script>
+    <script src="../js/servico/disciplina-servico.js"></script>
+    <script src="../js/repositorio/disciplina-repositorio.js"></script>
+    <script src="../js/controller/disciplina-controlador.js"></script>
+    
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
